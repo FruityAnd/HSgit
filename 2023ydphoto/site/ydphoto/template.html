@@ -1,0 +1,1953 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="사이트 제목">
+	<meta name="keywords" content="키워드 입력">
+	<meta name="description" content="사이트 상세설명">
+	<meta name="format-detection" content="telephone=no">
+	<meta property="og:site_name" content="사이트명 표시">
+	<meta property="og:url" content="url 표기">
+	<meta property="og:image" content="대표 이미지 경로">
+	<meta property="og:title" content="페이지 제목 표시">
+	<meta property="og:description" content="페이지 설명 표시">
+	<meta property="og:type" content="website">
+    <link rel="shortcut icon" href="/common/favicon.ico">
+    <link rel="icon" href="/common/favicon.ico">
+    <link rel="stylesheet" href="/common/css/font.css?v=202402" />
+    <link rel="stylesheet" href="/site/ydphoto/css/sub.css?v=202402" />
+    <script src="/common/js/jquery-1.12.4.HS-20200709.min.js?v=202402"></script>
+    <script src="/common/js/jquery.screen.min.js?v=202402"></script>
+    <script src="/common/js/slick.min.custom.1.8.0.12.js?v=202402"></script>
+    <script src="/common/js/slick.extensions.min.js?v=202402"></script>
+    <script src="/site/ydphoto/js/common.js?v=202402"></script>
+    <script src="/site/ydphoto/js/sub.js?v=202402"></script>
+    <script src="/site/ydphoto/js/template.js?v=202402"></script>
+    <script src="/common/js/program.min.js?v=202402"></script>
+    <script src="/site/ydphoto/js/program.js?v=202402"></script>
+    <script src="/site/ydphoto/prettify/run_prettify.js?lang=css&skin=sons-of-obsidian"></script>
+    <title>영덕 사진DB - 공통템플릿</title>
+</head>
+
+<body id="sub" class="sub">
+<div class="accessibility">
+	<a href="#contents">본문 바로가기</a>
+</div>
+<div id="wrapper">
+    <header id="header">
+		<div class="header_box">
+			<div class="wrap">
+				<h1 class="logo">
+					<a href="./index.do" class="logo_link">
+						<i class="logo_img">영뎍군청</i>
+						<span class="site_name">사진DB</span>
+					</a>    <!--//logo_link-->
+				</h1>    <!--//logo-->
+				<div class="menu_show">
+					<button type="button" class="menu_button">메뉴열기</button>
+				</div>    <!--//menu_show-->
+			</div>    <!--//wrap-->
+		</div>    <!--//header_box-->
+		<div class="lnb">
+			<div class="lnb_topbox">
+				<div class="m_gnb">
+					<div class="m_logo">
+						<a href="./index.do" class="logo_link">
+							<i class="logo_img">영뎍군청</i>
+							<span class="site_name">사진DB</span>
+						</a>    <!--//logo_link-->
+					</div>    <!--//m_logo-->
+				</div>    <!--//m_gnb-->
+			</div>    <!--//lnb_topbox-->
+			<nav class="menu eachdown">
+				<!--// 모바일을 위해 초기에 4차 메뉴까지 개발 필요 -->
+				<!--// 와이드에서는 3차메뉴까지만 표출되게 css 작성 해두었습니다 -->
+				<!--// 사용자가 어떤 메뉴를 선택하든 그 해당메뉴의 ★★★마지막 차수★★★ a.depth_text 에 spy 클레스 및 title="선택됨" 필수로 달아주세요 -->
+				<!--// ex1) 1차메뉴명 - 2차메뉴명 - (3차메뉴명1, 3차메뉴명2)에서 2차메뉴명을 클릭했을 때 3차메뉴명들 중 첫번째인 3차메뉴명1 에 spy 클레스와 title="선택됨" 달림 -->
+				<!--// ex2) 1차메뉴명 - 2차메뉴명 - (3차메뉴명1, 3차메뉴명2) - (4차메뉴명1, 4차메뉴명2)에서 2차메뉴명을 클릭했을 때 3차메뉴명들 중 첫번째인 3차메뉴명1의 하위 4차메뉴명들 중 첫번째인 4차메뉴명1 에 spy 클레스와 title="선택됨" 달림 -->
+				<!--// CMS에서 새창 설정일때 a.depth_text 에 target="_blank" title="새창" rel="noopener noreferrer" 속성 필수 개발 부탁드립니다 -->
+				<h2 class="skip">메뉴</h2>
+				<div class="depth depth1">
+					<ul class="depth_list depth1_list">
+						<li class="depth_item depth1_item">
+							<a href="" class="depth_text depth1_text"><span><em>주제별</em></span></a>
+							<div class="depth depth2">
+								<div class="menu_title">
+									<div class="text">
+										영덕의<br />
+										아름다운 경치와<br />
+										다양한 행사사진을<br />
+										소개합니다!
+									</div>    <!--//text-->
+								</div>    <!--//menu_title-->
+								<ul class="depth_list depth2_list">
+									<li class="depth_item depth2_item">
+										<a href="" class="depth_text depth2_text"><span><em>군정/행정/유관기관/교육</em></span></a>
+										<div class="depth depth3">
+											<ul class="depth_list depth3_list">
+												<li class="depth_item depth3_item"><a href="" target="_blank" title="새창" class="depth_text depth3_text"><span><em>정치/선거</em></span></a></li>
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>경상북도</em></span></a></li>
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>영덕군의회</em></span></a></li>
+												<li class="depth_item depth3_item">
+													<a href="" class="depth_text depth3_text"><span><em>유관기관/단체</em></span></a>
+													<div class="depth depth4">
+														<ul class="depth_list depth4_list">
+															<li class="depth_item depth4_item"><a href="" target="_blank" title="새창" class="depth_text depth4_text "><span><em>유관기관</em></span></a></li>
+															<li class="depth_item depth4_item"><a href="" title="선택됨" class="depth_text depth4_text spy"><span><em>단체</em></span></a></li>
+															<!--// 현재 선택된메뉴 맨 마지막차수(.depth_text)에 spy 클래스 와 title="선택됨" 부여해주세요! -->
+														</ul>    <!--//depth4_list-->
+													</div>    <!--//depth4-->
+												</li>    <!--//depth3_item-->
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>국내외 교류</em></span></a></li>
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>향우회</em></span></a></li>
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>교육</em></span></a></li>
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>고향사랑 기부금</em></span></a></li>
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>공무원 노동조합</em></span></a></li>
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>전국민주연합노동조합</em></span></a></li>
+											</ul>    <!--//depth3_list-->
+										</div>    <!--//depth3-->
+									</li>    <!--//depth2_item-->
+									<li class="depth_item depth2_item">
+										<a href="" class="depth_text depth2_text"><span><em>경제/산업/시설물/교통</em></span></a>
+										<div class="depth depth3">
+											<ul class="depth_list depth3_list">
+												<li class="depth_item depth3_item">
+													<a href="" class="depth_text depth3_text"><span><em>경제</em></span></a>
+													<div class="depth depth4">
+														<ul class="depth_list depth4_list">
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>전통시장</em></span></a></li>
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>기타</em></span></a></li>
+														</ul>    <!--//depth4_list-->
+													</div>    <!--//depth4-->
+												</li>    <!--//depth3_item-->
+												<li class="depth_item depth3_item">
+													<a href="" class="depth_text depth3_text"><span><em>산업/일자리</em></span></a>
+													<div class="depth depth4">
+														<ul class="depth_list depth4_list">
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>산업</em></span></a></li>
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>신재생에너지</em></span></a></li>
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>일자리</em></span></a></li>
+														</ul>    <!--//depth4_list-->
+													</div>    <!--//depth4-->
+												</li>    <!--//depth3_item-->
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>공공시설</em></span></a></li>
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>교통시설</em></span></a></li>
+											</ul>    <!--//depth3_list-->
+										</div>    <!--//depth3-->
+									</li>    <!--//depth2_item-->
+									<li class="depth_item depth2_item">
+										<a href="" class="depth_text depth2_text"><span><em>문화/관광/관내 전경</em></span></a>
+										<div class="depth depth3">
+											<ul class="depth_list depth3_list">
+												<li class="depth_item depth3_item">
+													<a href="" class="depth_text depth3_text"><span><em>문화</em></span></a>
+													<div class="depth depth4">
+														<ul class="depth_list depth4_list">
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>문화시설</em></span></a></li>
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>문화행사</em></span></a></li>
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>문화제</em></span></a></li>
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>문화예술 단체</em></span></a></li>
+														</ul>    <!--//depth4_list-->
+													</div>    <!--//depth4-->
+												</li>    <!--//depth3_item-->
+												<li class="depth_item depth3_item">
+													<a href="" class="depth_text depth3_text"><span><em>관광</em></span></a>
+													<div class="depth depth4">
+														<ul class="depth_list depth4_list">
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>축제</em></span></a></li>
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>관광명소</em></span></a></li>
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>전시관/체험시설</em></span></a></li>
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>사진공모전</em></span></a></li>
+														</ul>    <!--//depth4_list-->
+													</div>    <!--//depth4-->
+												</li>    <!--//depth3_item-->
+												<li class="depth_item depth3_item">
+													<a href="" class="depth_text depth3_text"><span><em>관내 전경</em></span></a>
+													<div class="depth depth4">
+														<ul class="depth_list depth4_list">
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>강/바다</em></span></a></li>
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>자연/생태계</em></span></a></li>
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>산/계곡</em></span></a></li>
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>해수욕장</em></span></a></li>
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>읍면 전경(9개읍면)</em></span></a></li>
+															<li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>기타</em></span></a></li>
+														</ul>    <!--//depth4_list-->
+													</div>    <!--//depth4-->
+												</li>    <!--//depth3_item-->
+											</ul>    <!--//depth3_list-->
+										</div>    <!--//depth3-->
+									</li>    <!--//depth2_item-->
+									<li class="depth_item depth2_item">
+										<a href="" class="depth_text depth2_text"><span><em>복지/보건(의료)/환경(위생)</em></span></a>
+										<div class="depth depth3">
+											<ul class="depth_list depth3_list">
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>복지</em></span></a></li>
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>보건(의료)</em></span></a></li>
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>환경(위생)</em></span></a></li>
+											</ul>    <!--//depth3_list-->
+										</div>    <!--//depth3-->
+									</li>    <!--//depth2_item-->
+									<li class="depth_item depth2_item">
+										<a href="" class="depth_text depth2_text"><span><em>체육/재난(재해)/시위(집회)</em></span></a>
+										<div class="depth depth3">
+											<ul class="depth_list depth3_list">
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>체육대회</em></span></a></li>
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>축구대회</em></span></a></li>
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>체육단체(종목별)</em></span></a></li>
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>재난/재해</em></span></a></li>
+												<li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>시위(집회)</em></span></a></li>
+											</ul>    <!--//depth3_list-->
+										</div>    <!--//depth3-->
+									</li>    <!--//depth2_item-->
+									<li class="depth_item depth2_item"><a href="" target="_blank" title="새창" class="depth_text depth2_text"><span><em>기타</em></span></a></li>
+								</ul>    <!--//depth2_list-->
+							</div>    <!--//depth2-->
+						</li>    <!--//depth1_item-->
+						<li class="depth_item depth1_item">
+							<a href="" class="depth_text depth1_text"><span><em>지역별</em></span></a>
+							<div class="depth depth2">
+								<div class="menu_title">
+									<div class="text">
+										영덕의<br />
+										아름다운 경치와<br />
+										다양한 행사사진을<br />
+										소개합니다!
+									</div>    <!--//text-->
+								</div>    <!--//menu_title-->
+								<ul class="depth_list depth2_list">
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>영덕읍</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>강구면</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>남정면</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>달산면</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>지품면</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>축산면</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>영해면</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>병곡면</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>창수면</em></span></a></li>
+								</ul>    <!--//depth2_list-->
+							</div>    <!--//depth2-->
+						</li>    <!--//depth1_item-->
+						<li class="depth_item depth1_item">
+							<a href="" class="depth_text depth1_text"><span><em>시대별</em></span></a>
+							<div class="depth depth2">
+								<div class="menu_title">
+									<div class="text">
+										영덕의<br />
+										아름다운 경치와<br />
+										다양한 행사사진을<br />
+										소개합니다!
+									</div>    <!--//text-->
+								</div>    <!--//menu_title-->
+								<ul class="depth_list depth2_list">
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>1920년대</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>1930년대</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>1940년대</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>1950년대</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>1960년대</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>1970년대</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>1980년대</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>1990년대</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>2000년대</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>2010년대</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>2020년대</em></span></a></li>
+									<li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>기타</em></span></a></li>
+								</ul>    <!--//depth2_list-->
+							</div>    <!--//depth2-->
+						</li>    <!--//depth1_item-->
+						<li class="depth_item depth1_item"><a href="" class="depth_text depth1_text"><span><em>옛사진</em></span></a></li>    <!--//depth1_item-->
+						<li class="depth_item depth1_item"><a href="" class="depth_text depth1_text"><span><em>영상 기록관</em></span></a></li>    <!--//depth1_item-->
+					</ul>
+				</div>
+			</nav>
+			<div class="menu_hide">
+				<button type="button" class="menu_button">메뉴 닫기</button>
+			</div>
+		</div>
+		<div class="lnb_curtain"><button type="button">메뉴 닫기</button></div>
+		<div class="sitemap-icon">
+			<a href="" class="link">사이트맵</a>
+		</div>    <!--//sitemap-icon-->
+	</header>    <!--//#header-->
+    <div class="sub_visual">
+        <div class="img_box">
+            <i class="visual_img"></i>
+        </div>    <!--//img_box-->
+        <div class="title_box">
+            <!--// 비쥬얼 타이틀에는 현재 선택된 마지막차수 메뉴명 텍스트가 들어오도록 개발 부탁드립니다. -->
+            <!--// 현재 선택된 메뉴의 마지막차수인 .lnb .depth .depth_item 의 .depth_text.spy span em의 텍스트가 .sub_visual .title_box .title 에 동일하게 들어오도록 해주세요. -->
+            <h2 class="title">단체</h2><!--//현재 페이지의 최종 메뉴명-->
+        </div>    <!--//title_box-->
+    </div>    <!--//sub_visual-->
+    <div id="container">
+        <div class="wrap">
+            <main>
+                <article>
+                    <header class="sub_head">
+                        <!--//.path_box 와 .m_path_box 둘 다 개발해 주세요-->
+                        <div class="path_box">
+                            <!--// .path_depth1 = 1차메뉴, .path_depth2 = 2차메뉴, .path_depth3 = 3차메뉴, .path_depth4 = 4차메뉴 -->
+                            <!--// .path_menu_item a.link span 에 해당 차수에 해당하는 메뉴명 뿌려주시고, a.link 클릭시 button.path_depth_btn의 텍스트가 클릭한 a.white_menu_text의 텍스트로 변경되도록 개발 요청드립니다 -->
+                            <!--// CMS에서 새창 설정일때 a.white_menu_text에 target="_blank" title="새창" 필수 개발 부탁드립니다.-->
+                            <!--//
+                                       [1차메뉴]           [2차메뉴]            [3차메뉴]            [4차메뉴]
+                                     .path_depth1        .path_depth2        .path_depth3        .path_depth4
+                                          1         >        1-1        >       1-1-1       >       1-1-1-1
+                                                    >        1-2        >       1-2-1²      >       1-2-2-1
+                                                                                            >       1-2-2-2
+                                                                                            >       1-2-2-3
+                                                    >        1-3        >       1-3-1³
+                                                                        >       1-3-2
+                                                    >        1-4¹
+                                           2        >        2-1        >       2-1-1
+                            -->
+                            <!--//
+                                   조건¹ ▶ 1-4를 클릭했을 경우
+                                   구조  ▷        .path_depth1   /   .path_depth2   /  .path_depth3(삭제)  /  .path_depth4(삭제)
+                                   1) 화면상 표출:       1                1-4                  X                      X
+                                   2) 2차메뉴 1-4는 하위메뉴(3차, 4차)가 없기때문에, 페이지가 랜더링 되었을 때 3·4차 마크업이 남아있으면 안됩니다.
+                                      .path_depth3[3차메뉴], .path_depth4[4차메뉴] 마크업 자체가 삭제되도록 개발 부탁드립니다.
+                             -->
+                            <!--//
+                                   조건² ▶ 1-2-1를 클릭했을 경우
+                                   구조  ▷       .path_depth1   /   .path_depth2    /   .path_depth3   /  .path_depth4
+                                   1) 화면상표출:       1                1-2                1-2-1                1-2-1-1
+                                   2) 3차메뉴 1-2-1을 클릭시, 하위메뉴(4차) 중 첫번째인 1-2-1-1 텍스트가 .path_depth4 .path_button .btn span 에 들어와야 합니다
+                            -->
+                            <!--//
+                                   조건³ ▶ 1-3-1를 클릭했을 경우
+                                   구조  ▷        .path_depth1   /   .path_depth2   /  .path_depth3.checker  /  .path_depth4(삭제)
+                                   1) 화면상표출:       1-1                1-3                 1-3-1                     X
+                                   2) 3차메뉴 1-3-1는 하위메뉴(4차)가 없으므로 .path_depth4(4차)의 마크업 자체가 삭제되도록 개발 부탁드립니다.
+                            -->
+                            <div class="path_item home"><a href="" class="link">메인페이지</a></div>    <!--//path_item-->
+                            <div class="path_item path_depth1">
+                                <div class="path_inner">
+                                    <div class="path_button"><button type="button" title="메뉴 열기" class="btn"><span>주제별</span><i class="icon"></i></button></div>
+                                    <!--//현재 선택된 메뉴에 해당하는 depth1 메뉴명이 들어오게 해주세요.-->
+                                    <ul class="path_menu_list">
+                                        <!--//lnb 메뉴의 depth1 목록이 들어오게 해주세요.-->
+                                        <li class="path_menu_item"><a href="" class="link"><span>주제별</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>지역별</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>시대별</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>옛사진</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>영상기록관</span></a></li>
+                                    </ul>    <!--//path_menu_list-->
+                                </div>    <!--//path_inner-->
+                            </div>    <!--//path_item-->
+                            <div class="path_item path_depth2">
+                                <div class="path_inner">
+                                    <div class="path_button"><button type="button" title="메뉴 열기" class="btn"><span>군정/행정/유관기관/교육</span><i class="icon"></i></button></div>
+                                    <!--//현재 선택된 메뉴에 해당하는 depth2 메뉴명이 들어오게 해주세요.-->
+                                    <ul class="path_menu_list">
+                                        <!--//lnb 메뉴의 depth2 목록이 들어오게 해주세요.-->
+                                        <li class="path_menu_item"><a href="" class="link"><span>군정/행정/유관기관/교육</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>경제/산업/시설물/교통</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>문화/관광/관내 전경</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>농림축수산업/특산물</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>2차 메뉴명</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>2차 메뉴명</span></a></li>
+                                    </ul>    <!--//path_menu_list-->
+                                </div>    <!--//path_inner-->
+                            </div>    <!--//path_item-->
+                            <div class="path_item path_depth3">
+                                <div class="path_inner">
+                                    <div class="path_button"><button type="button" title="메뉴 열기" class="btn"><span>유관기관/단체</span><i class="icon"></i></button></div>
+                                    <!--//현재 선택된 메뉴에 해당하는 depth3 메뉴명이 들어오게 해주세요.-->
+                                    <ul class="path_menu_list">
+                                        <!--//lnb 메뉴의 depth3 목록이 들어오게 해주세요.-->
+                                        <li class="path_menu_item"><a href="" class="link"><span>정치/선거</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>경상북도</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>영덕군의회</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>유관기관/단체</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>국내외 교류</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>3차 메뉴명</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>3차 메뉴명</span></a></li>
+                                    </ul>    <!--//path_menu_list-->
+                                </div>    <!--//path_inner-->
+                            </div>    <!--//path_item-->
+                            <div class="path_item path_depth4">
+                                <div class="path_inner">
+                                    <div class="path_button"><button type="button" title="메뉴 열기" class="btn"><span>단체</span><i class="icon"></i></button></div>
+                                    <!--//현재 선택된 메뉴에 해당하는 depth4 메뉴명이 들어오게 해주세요.-->
+                                    <ul class="path_menu_list">
+                                        <!--//lnb 메뉴의 depth4 목록이 들어오게 해주세요.-->
+                                        <li class="path_menu_item"><a href="" class="link"><span>유관기관</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>단체</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>4차 메뉴명</span></a></li>
+                                        <li class="path_menu_item"><a href="" class="link"><span>4차 메뉴명</span></a></li>
+                                    </ul>    <!--//path_menu_list-->
+                                </div>    <!--//path_inner-->
+                            </div>    <!--//path_item-->
+                        </div>    <!--//path_box-->
+                        <div class="m_path_box">
+                            <div class="path_item home"><a href="" class="link">메인페이지</a></div>    <!--//path_item-->
+                            <div class="path_item"><a href="" class="link"><span>주제별</span></a></div>    <!--//path_item-->
+                            <!--//현재 페이지에 해당하는 depth1 메뉴명이 들어오게 해주세요.-->
+                            <div class="path_item"><a href="" class="link"><span>군정/행정/유관기관/교육</span></a></div>    <!--//path_item-->
+                            <!--//현재 페이지에 해당하는 depth2 메뉴명이 들어오게 해주세요.-->
+                            <div class="path_item"><a href="" class="link"><span>유관기관/단체</span></a></div>    <!--//path_item-->
+                            <!--//현재 페이지에 해당하는 depth3 메뉴명이 들어오게 해주세요.-->
+                            <div class="path_item"><a href="" class="link"><span>단체</span></a></div>    <!--//path_item-->
+                            <!--//현재 페이지에 해당하는 depth4 메뉴명이 들어오게 해주세요.-->
+                        </div>    <!--//path_box-->
+                    </header>    <!--//sub_head-->
+                    <div id="contents">
+                        <div class="yd_tab_box">
+                            <div class="yd_tab_list">
+                                <div class="yd_tab_item active">
+                                    <button type="button" title="선택됨" class="yd_tab_btn">
+                                        <span>
+                                            <em>선택된 텝메뉴</em>
+                                        </span>
+                                    </button>    <!--//yd_tab_btn-->
+                                </div>    <!--//yd_tab_item-->
+                                <div class="yd_tab_item">
+                                    <button type="button" class="yd_tab_btn">
+                                        <span>
+                                            <em>텝메뉴</em>
+                                        </span>
+                                    </button>    <!--//yd_tab_btn-->
+                                </div>    <!--//yd_tab_item-->
+                                <div class="yd_tab_item">
+                                    <button type="button" class="yd_tab_btn">
+                                        <span>
+                                            <em>텝메뉴</em>
+                                        </span>
+                                    </button>    <!--//yd_tab_btn-->
+                                </div>    <!--//yd_tab_item-->
+                                <div class="yd_tab_item">
+                                    <button type="button" class="yd_tab_btn">
+                                        <span>
+                                            <em>텝메뉴 텝메뉴 이름이 긴 텝메뉴</em>
+                                        </span>
+                                    </button>    <!--//yd_tab_btn-->
+                                </div>    <!--//yd_tab_item-->
+                                <div class="yd_tab_item">
+                                    <button type="button" class="yd_tab_btn">
+                                        <span>
+                                            <em>텝메뉴</em>
+                                        </span>
+                                    </button>    <!--//yd_tab_btn-->
+                                </div>    <!--//yd_tab_item-->
+                                <div class="yd_tab_item">
+                                    <button type="button" class="yd_tab_btn">
+                                        <span>
+                                            <em>텝메뉴</em>
+                                        </span>
+                                    </button>    <!--//yd_tab_btn-->
+                                </div>    <!--//yd_tab_item-->
+                                <div class="yd_tab_item">
+                                    <button type="button" class="yd_tab_btn">
+                                        <span>
+                                            <em>텝메뉴</em>
+                                        </span>
+                                    </button>    <!--//yd_tab_btn-->
+                                </div>    <!--//yd_tab_item-->
+                                <div class="yd_tab_item">
+                                    <button type="button" class="yd_tab_btn">
+                                        <span>
+                                            <em>텝메뉴텝메뉴 텝메뉴텝메뉴 텝메뉴텝메뉴 텝메뉴텝메뉴</em>
+                                        </span>
+                                    </button>    <!--//yd_tab_btn-->
+                                </div>    <!--//yd_tab_item-->
+                            </div>    <!--//yd_tab_list-->
+                            <div class="yd_cts_list">
+                                <div class="yd_cts_item active">1</div>    <!--//yd_cts_item-->
+                                <div class="yd_cts_item">2</div>    <!--//yd_cts_item-->
+                                <div class="yd_cts_item">3</div>    <!--//yd_cts_item-->
+                                <div class="yd_cts_item">4</div>    <!--//yd_cts_item-->
+                                <div class="yd_cts_item">5</div>    <!--//yd_cts_item-->
+                                <div class="yd_cts_item">6</div>    <!--//yd_cts_item-->
+                                <div class="yd_cts_item">7</div>    <!--//yd_cts_item-->
+                                <div class="yd_cts_item">8</div>    <!--//yd_cts_item-->
+                            </div>    <!--//yd_cts_list-->
+                        </div>    <!--//yd_tab_box-->
+                        <div class="yd_tab_box">
+                            <div class="yd_tab_list">
+                                <div class="yd_tab_item active">
+                                    <button type="button" title="선택됨" class="yd_tab_btn">
+                                        <span>
+                                            <em>제목 및 본문</em>
+                                        </span>
+                                    </button>    <!--//yd_tab_btn-->
+                                </div>    <!--//yd_tab_item-->
+                                <div class="yd_tab_item">
+                                    <button type="button" class="yd_tab_btn">
+                                        <span>
+                                            <em>강조 / 안내 / 경고 / .blt</em>
+                                        </span>
+                                    </button>    <!--//yd_tab_btn-->
+                                </div>    <!--//yd_tab_item-->
+                                <div class="yd_tab_item">
+                                    <button type="button" class="yd_tab_btn">
+                                        <span>
+                                            <em>목록</em>
+                                        </span>
+                                    </button>    <!--//yd_tab_btn-->
+                                </div>    <!--//yd_tab_item-->
+                                <div class="yd_tab_item">
+                                    <button type="button" class="yd_tab_btn">
+                                        <span>
+                                            <em>테이블</em>
+                                        </span>
+                                    </button>    <!--//yd_tab_btn-->
+                                </div>    <!--//yd_tab_item-->
+                                <div class="yd_tab_item">
+                                    <button type="button" class="yd_tab_btn">
+                                        <span>
+                                            <em>링크 및 버튼</em>
+                                        </span>
+                                    </button>    <!--//yd_tab_btn-->
+                                </div>    <!--//yd_tab_item-->
+                                <div class="yd_tab_item">
+                                    <button type="button" class="yd_tab_btn">
+                                        <span>
+                                            <em>폼요소</em>
+                                        </span>
+                                    </button>    <!--//yd_tab_btn-->
+                                </div>    <!--//yd_tab_item-->
+                                <div class="yd_tab_item">
+                                    <button type="button" class="yd_tab_btn">
+                                        <span>
+                                            <em>박스</em>
+                                        </span>
+                                    </button>    <!--//yd_tab_btn-->
+                                </div>    <!--//yd_tab_item-->
+                            </div>    <!--//yd_tab_list-->
+                            <div class="yd_cts_list">
+                                <div class="yd_cts_item active">
+                                    <h3>h3 Title, h3 타이틀 제목입니다.<span class="sub_title">제목 안의 소제목입니다</span></h3>
+                                    <h4>h4 Title, h4 타이틀 제목입니다.</h4>
+                                    <h5>h5 Title, h5 타이틀 제목입니다.</h5>
+                                    <h6>h6 Title, h6 타이틀 제목입니다.</h6>
+                                    <span class="sub_title">제목 안의 소제목입니다. 모든 제목태그 안에 삽입 가능합니다.</span>
+                                    
+                                    <h3>영덕군이란? <span class="sub_title">영덕의 역사</span></h3>
+                                    <p>영덕군은 741.20㎢의 면적으로 경상북도 동북부에 위치하여 영남지방에 속하고 포항시와 울진군, 영양군, 청송군과 경계를 이루고 있습니다. 영덕군은 1읍(영덕읍) 8면(창수면,병곡면,영해면,축산면,지품면,달산면,강구면,남정면) 204개 행정리가 있습니다. 영덕군은 741.20㎢의 면적으로 경상북도 동북부에 위치하여 영남지방에 속하고 포항시와 울진군, 영양군, 청송군과 경계를 이루고 있습니다. 영덕군은 1읍(영덕읍) 8면(창수면,병곡면,영해면,축산면,지품면,달산면,강구면,남정면) 204개 행정리가 있습니다.</p>
+                                    
+<xmp class="prettyprint linenums xmp">
+    <h3>h3 제목</h3>
+    <h4>h4 제목</h4>
+    <h5>h5 제목</h5>
+    <h6>h6 제목</h6>
+    
+    <span class="sub_title">제목 안의 소제목입니다.</span>
+</xmp>
+                                </div>    <!--//yd_cts_item-->
+                                <div class="yd_cts_item">
+                                    <h3>강조컬러</h3>
+                                    <div class="em_box">
+                                        <em class="em_sky">하늘색 기본(.em_sky)</em>    <!--//em_sky-->
+                                        <em class="em_red">빨간색 기본(.em_red)</em>    <!--//em_red-->
+                                        <em class="em_blue">파랑색 기본(.em_blue)</em>    <!--//em_blue-->
+                                        <em class="em_orange">주황색 기본(.em_orange)</em>    <!--//em_orange-->
+                                    </div>
+                                    <div class="em_box">
+                                        <em class="em_b_sky">하늘색 bold(.em_b_sky)</em>    <!--//em_b_sky-->
+                                        <em class="em_b_red">빨강색 bold(.em_b_red)</em>    <!--//em_b_red-->
+                                        <em class="em_b_blue">파랑색 bold(.em_b_blue)</em>    <!--//em_b_blue-->
+                                        <em class="em_b_orange">주황색 bold(.em_b_orange)</em>    <!--//em_b_orange-->
+                                    </div>
+                                    
+<xmp class="prettyprint linenums xmp">
+    <em class="em_sky">하늘색 기본</em>    <!--//em_sky-->
+    <em class="em_red">빨간색 기본</em>    <!--//em_red-->
+    <em class="em_blue">파랑색 기본</em>    <!--//em_blue-->
+    <em class="em_orange">주황색 기본</em>    <!--//em_orange-->
+    
+    <em class="em_b_sky">하늘색 bold</em>    <!--//em_b_sky-->
+    <em class="em_b_red">빨강색 bold</em>    <!--//em_b_red-->
+    <em class="em_b_blue">파랑색 bold</em>    <!--//em_b_blue-->
+    <em class="em_b_orange">주황색 bold</em>    <!--//em_b_orange-->
+</xmp>
+                                    
+                                    <h3>안내 및 경고(.warning.~type2)</h3>
+                                    <span class="warning"><span class="skip">안내</span>안내문구</span>    <!--//warning-->
+                                    <div class="warning type2"><span class="skip">경고</span>경고문구</div>    <!--//warning type2-->
+                                    
+<xmp class="prettyprint linenums xmp">
+    <span class="warning"><span class="skip">안내</span>안내문구</span>    <!--//warning-->
+    <div class="warning type2"><span class="skip">경고</span>경고문구</div>    <!--//warning type2-->
+</xmp>
+                                    
+                                    <h3>목록 모양(.blt/.blt2)</h3>
+                                    <h4>순서없는 모양 목록 사용(.blt.~type3)</h4>
+                                    <div class="blt">순서없는 모양 목록 1차(.blt)</div>    <!--//blt-->
+                                    <span class="blt type2">순서없는 모양 목록 2차(.blt.type2)</span>    <!--//blt type2-->
+                                    <div class="blt type3">순서없는 모양 목록 3차(.blt.type3)</div>    <!--//blt type3-->
+                                    <h4>순서있는 모양 목록 사용(.blt2.~type3 > .number)</h4>
+                                    <span class="blt2"><i class="number">1</i>순서있는 모양 목록 1차(.blt2)</span>    <!--//blt2-->
+                                    <div class="blt2 type2"><i class="number">2</i>순서있는 모양 목록 2차(.blt2.type2)</div>    <!--//blt2 type2-->
+                                    <span class="blt2 type3"><i class="number">3</i>순서있는 모양 목록 3차(.blt2.type3)</span>    <!--//blt2 type3-->
+                                    
+<xmp class="prettyprint linenums xmp">
+    <div class="blt">순서없는 1차</div>    <!--//blt-->
+    <span class="blt type2">순서없는 2차</span>    <!--//blt type2-->
+    <div class="blt type3">순서없는 3차</div>    <!--//blt type3-->
+    
+    <span class="blt2"><i class="number">1</i>순서있는 1차</span>    <!--//blt2-->
+    <div class="blt2 type2"><i class="number">2</i>순서있는 2차</div>    <!--//blt2 type2-->
+    <span class="blt2 type3"><i class="number">3</i>순서있는 3차</span>    <!--//blt2 type3-->
+</xmp>
+                                </div>    <!--//yd_cts_item-->
+                                <div class="yd_cts_item">
+                                    <h3>순서없는 목록(.bu)</h3>
+                                    <ul class="bu">
+                                        <li>순서가 없는 목록 1차입니다.</li>
+                                        <li>영덕군의 기후는 대체적으로 온난한 편이며 여름의 최고온도가 섭씨 30도를 오르내리고 최저온 시기의 겨울일 때에의 기온이 영하 15도정도이며 년중 해류의 영향을 받아 한서의 차가 없지는 않으나 봄이 없다할 정도로 이상기후를 지닌 곳이라 할 수 있다. 봄철이 될 때에는 동남풍이 심하고 겨울철이 되면 서북풍이 심하게 불어 닥치는 데 이러한 기상은 해안을 따라 변절하는 계절풍으로 주기적인 형상이라 가을이 길고 봄이 짧은 편이다.
+                                            <ul class="bu">
+                                                <li>순서가 없는 목록 2차입니다.</li>
+                                                <li>순서가 없는 목록 2차입니다.</li>
+                                                <li>영덕군의 기후는 대체적으로 온난한 편이며 여름의 최고온도가 섭씨 30도를 오르내리고 최저온 시기의 겨울일 때에의 기온이 영하 15도정도이며 년중 해류의 영향을 받아 한서의 차가 없지는 않으나 봄이 없다할 정도로 이상기후를 지닌 곳이라 할 수 있다. 봄철이 될 때에는 동남풍이 심하고 겨울철이 되면 서북풍이 심하게 불어 닥치는 데 이러한 기상은 해안을 따라 변절하는 계절풍으로 주기적인 형상이라 가을이 길고 봄이 짧은 편이다.
+                                                    <ul class="bu">
+                                                        <li>순서가 없는 목록 3차입니다.</li>
+                                                        <li>순서가 없는 목록 3차입니다.</li>
+                                                        <li>순서가 없는 목록 3차입니다.</li>
+                                                    </ul>    <!--//bu-->
+                                                </li>
+                                            </ul>    <!--//bu-->
+                                        </li>
+                                        <li>순서가 없는 목록 1차입니다.</li>
+                                    </ul>    <!--//bu-->
+                                    
+<xmp class="prettyprint linenums xmp">
+    <ul class="bu">
+        <li>내용</li>
+        <li>내용</li>
+    </ul>    <!--//bu-->
+    
+    <ul class="bu">
+        <li>순서없는</li>
+        <li>순서없는
+            <ul class="bu">
+                <li>순서없는</li>
+                <li>순서없는
+                    <ul class="bu">
+                        <li>순서없는</li>
+                        <li>순서없는</li>
+                    </ul>    <!--//bu-->
+                </li>
+            </ul>    <!--//bu-->
+        </li>
+    </ul>    <!--//bu-->
+</xmp>
+                                    
+                                    <h3>순서있는 목록(.num > .number) - 숫자</h3>
+                                    <ol class="num">
+                                        <li><i class="number">1</i>순서가 있는 목록 1차입니다.</li>
+                                        <li>
+                                            <i class="number">2</i>순서가 있는 목록 1차입니다.
+                                            <ol class="num">
+                                                <li><i class="number">1</i>순서가 있는 목록 2차입니다.</li>
+                                                <li><i class="number">2</i>순서가 있는 목록 2차입니다.</li>
+                                                <li><i class="number">3</i>순서가 있는 목록 2차입니다.</li>
+                                                <li>
+                                                    <i class="number">20</i>영덕군의 기후는 대체적으로 온난한 편이며 여름의 최고온도가 섭씨 30도를 오르내리고 최저온 시기의 겨울일 때에의 기온이 영하 15도정도이며 년중 해류의 영향을 받아 한서의 차가 없지는 않으나 봄이 없다할 정도로 이상기후를 지닌 곳이라 할 수 있다. 봄철이 될 때에는 동남풍이 심하고 겨울철이 되면 서북풍이 심하게 불어 닥치는 데 이러한 기상은 해안을 따라 변절하는 계절풍으로 주기적인 형상이라 가을이 길고 봄이 짧은 편이다.
+                                                    <ol class="num">
+                                                        <li><i class="number">1</i>순서가 있는 목록 3차입니다.</li>
+                                                        <li><i class="number">2</i>영덕군의 기후는 대체적으로 온난한 편이며 여름의 최고온도가 섭씨 30도를 오르내리고 최저온 시기의 겨울일 때에의 기온이 영하 15도정도이며 년중 해류의 영향을 받아 한서의 차가 없지는 않으나 봄이 없다할 정도로 이상기후를 지닌 곳이라 할 수 있다. 봄철이 될 때에는 동남풍이 심하고 겨울철이 되면 서북풍이 심하게 불어 닥치는 데 이러한 기상은 해안을 따라 변절하는 계절풍으로 주기적인 형상이라 가을이 길고 봄이 짧은 편이다.</li>
+                                                        <li><i class="number">3</i>순서가 있는 목록 3차입니다.</li>
+                                                    </ol>    <!--//num-->
+                                                </li>
+                                            </ol>    <!--//num-->
+                                        </li>
+                                        <li><i class="number">3</i>영덕군의 기후는 대체적으로 온난한 편이며 여름의 최고온도가 섭씨 30도를 오르내리고 최저온 시기의 겨울일 때에의 기온이 영하 15도정도이며 년중 해류의 영향을 받아 한서의 차가 없지는 않으나 봄이 없다할 정도로 이상기후를 지닌 곳이라 할 수 있다. 봄철이 될 때에는 동남풍이 심하고 겨울철이 되면 서북풍이 심하게 불어 닥치는 데 이러한 기상은 해안을 따라 변절하는 계절풍으로 주기적인 형상이라 가을이 길고 봄이 짧은 편이다.</li>
+                                        <li><i class="number">10</i>순서가 있는 목록 1차입니다.</li>
+                                    </ol>    <!--//num-->
+<xmp class="prettyprint linenums xmp">
+    <ol class="num">
+        <li><i class="number">1</i>내용</li>
+        <li><i class="number">2</i>내용</li>
+        <li><i class="number">3</i>내용</li>
+    </ol>    <!--//num-->
+    
+    <ol class="num">
+        <li><i class="number">1</i>순서있는</li>
+        <li><i class="number">2</i>순서있는
+            <ol class="num">
+                <li><i class="number">1</i>순서있는</li>
+                <li><i class="number">2</i>순서있는
+                    <ol class="num">
+                        <li><i class="number">1</i>순서있는</li>
+                        <li><i class="number">2</i>순서있는</li>
+                    </ol>    <!--//num-->
+                </li>
+            </ol>    <!--//num-->
+        </li>
+    </ol>    <!--//num-->
+</xmp>
+                                    
+                                    <h3>순서 없는&amp;있는 목록 혼합사용 (.bu / .num) - 혼합 사용시 클레스명 필수작성</h3>
+                                    <h4>예시1</h4>
+                                    <ul class="bu">
+                                        <li>순서가 없는 목록 1차입니다.</li>
+                                        <li>순서가 없는 목록 1차입니다.
+                                            <ol class="num">
+                                                <li><i class="number">1</i>순서가 있는 목록 2차입니다.
+                                                    <ul class="bu">
+                                                        <li>순서가 없는 목록 3차입니다.</li>
+                                                        <li>순서가 없는 목록 3차입니다.</li>
+                                                        <li>순서가 없는 목록 3차입니다.</li>
+                                                    </ul>    <!--//bu-->
+                                                </li>
+                                                <li><i class="number">2</i>순서가 있는 목록 2차입니다.</li>
+                                                <li><i class="number">30</i>순서가 있는 목록 2차입니다.</li>
+                                            </ol>    <!--//num-->
+                                        </li>
+                                        <li>순서가 없는 목록 1차입니다.</li>
+                                    </ul>    <!--//bu-->
+                                    
+                                    <h4>예시2</h4>
+                                    <ol class="num">
+                                        <li><i class="number">1</i>순서가 있는 목록 1차입니다.</li>
+                                        <li><i class="number">2</i>순서가 있는 목록 1차입니다.
+                                            <ul class="bu">
+                                                <li>순서가 없는 목록 2차입니다.</li>
+                                                <li>순서가 없는 목록 2차입니다.</li>
+                                                <li>순서가 없는 목록 2차입니다.
+                                                    <ol class="num">
+                                                        <li><i class="number">1</i>순서가 있는 목록 3차입니다.</li>
+                                                        <li><i class="number">2</i>순서가 있는 목록 3차입니다.</li>
+                                                        <li><i class="number">3</i>순서가 있는 목록 3차입니다.</li>
+                                                    </ol>    <!--//num-->
+                                                </li>
+                                            </ul>    <!--//bu-->
+                                        </li>
+                                        <li><i class="number">3</i>순서가 있는 목록 1차입니다.</li>
+                                    </ol>    <!--//num-->
+                                </div>    <!--//yd_cts_item-->
+                                <div class="yd_cts_item">
+                                    <h3>테이블 셀 패딩 줄임(padding:5px) - .table에 .t_custom 중복클레스 추가시 적용</h3>
+                                    
+                                    <h3>테이블 유닛(.table_unit)</h3>
+                                    <div class="table_unit">테이블 상단 및 하단에 내용 있으면 사용</div>    <!--//table_unit-->
+                                    
+<xmp class="prettyprint linenums xmp">
+    <div class="table_unit">내용입력</div>    <!--//table_unit-->
+</xmp>
+                                    
+                                    <h3>가로 기본 테이블(.table)</h3>
+                                    <div class="table_unit">테이블 상단에 및 하단에 내용 있으면 사용</div>    <!--//table_unit-->
+                                    <table class="table">
+                                        <caption>가로 테이블 - thead의 th 타이틀 내용 넣어주세요.</caption>
+                                        <colgroup>
+                                            <col style="width:25%;" />
+                                            <col style="width:25%;" />
+                                            <col style="width:25%;" />
+                                            <col style="width:25%;" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">테이블 타이틀</th>
+                                                <th scope="col">테이블 타이틀</th>
+                                                <th scope="col">테이블 타이틀</th>
+                                                <th scope="col">테이블 타이틀</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>영덕은 대게가 대게대게 맛있습니다. 영덕은 대게가 대게대게 맛있습니다.</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>    <!--//table-->
+
+<xmp class="prettyprint linenums xmp">
+    <table class="table">
+        <caption>가로 테이블 - thead의 th 타이틀</caption>
+        <colgroup>
+            <col style="width:50%;" />
+            <col style="width:50%;" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">타이틀</th>
+                <th scope="col">타이틀</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">타이틀</th>
+                <td>내용</td>
+            </tr>
+            <tr>
+                <th scope="row">타이틀</th>
+                <td>내용</td>
+            </tr>
+        </tbody>
+    </table>    <!--//table-->
+</xmp>
+                                    <h3>세로 기본 테이블(.table.type2)</h3>
+                                    <div class="table_unit">테이블 상단 및 하단에 내용 있으면 사용</div>    <!--//table_unit-->
+                                    <table class="table type2">
+                                        <caption>세로 테이블 - tbody의 th 타이틀 내용 넣어주세요.</caption>
+                                        <colgroup>
+                                            <col style="width:25%;" />
+                                            <col style="width:25%;" />
+                                            <col style="width:25%;" />
+                                            <col style="width:25%;" />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>영덕은 대게가 대게대게 맛있습니다. 영덕은 대게가 대게대게 맛있습니다.</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>    <!--//table type2-->
+                                    
+<xmp class="prettyprint linenums xmp">
+    <table class="table type2">
+        <caption>세로 테이블 - tbody의 th 타이틀</caption>
+        <colgroup>
+            <col style="width:50%;" />
+            <col style="width:50%;" />
+        </colgroup>
+        <tbody>
+            <tr>
+                <th scope="row">타이틀</th>
+                <td>내용</td>
+            </tr>
+            <tr>
+                <th scope="row">타이틀</th>
+                <td>내용</td>
+            </tr>
+        </tbody>
+    </table>    <!--//table type2-->
+</xmp>
+                                    <h3>가로 반응형 테이블(.table.responsive)</h3>
+                                    <table class="table responsive">
+                                        <caption>가로 반응형 테이블 - thead의 th 타이틀 내용 넣어주세요.</caption>
+                                        <colgroup>
+                                            <col style="width:25%;" />
+                                            <col style="width:25%;" />
+                                            <col style="width:25%;" />
+                                            <col style="width:25%;" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">테이블 타이틀</th>
+                                                <th scope="col">테이블 타이틀</th>
+                                                <th scope="col">테이블 타이틀</th>
+                                                <th scope="col">테이블 타이틀</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>영덕은 대게가 대게대게 맛있습니다. 영덕은 대게가 대게대게 맛있습니다. 영덕은 대게가 대게대게 맛있습니다.</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>    <!--//table responsive-->
+                                    
+<xmp class="prettyprint linenums xmp">
+    <table class="table responsive">
+        <caption>가로 반응형 테이블 - thead의 th 타이틀 내용</caption>
+        <colgroup>
+            <col style="width:50%;" />
+            <col style="width:50%;" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">타이틀</th>
+                <th scope="col">타이틀</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">타이틀</th>
+                <td>내용</td>
+            </tr>
+            <tr>
+                <th scope="row">타이틀</th>
+                <td>내용</td>
+            </tr>
+        </tbody>
+    </table>    <!--//table responsive-->
+</xmp>
+                                    
+                                    <h3>세로 반응형 테이블(.table.type2.responsive)</h3>
+                                    <table class="table type2 responsive">
+                                        <caption>세로 반응형 테이블 - tbody의 th 타이틀 내용 넣어주세요.</caption>
+                                        <colgroup>
+                                            <col style="width:25%;" />
+                                            <col style="width:25%;" />
+                                            <col style="width:25%;" />
+                                            <col style="width:25%;" />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>영덕은 대게가 대게대게 맛있습니다. 영덕은 대게가 대게대게 맛있습니다. 영덕은 대게가 대게대게 맛있습니다.</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>    <!--//table type2 responsive-->
+                                    
+<xmp class="prettyprint linenums xmp">
+    <table class="table type2 responsive">
+        <caption>세로 반응형 테이블 - tbody의 th 타이틀</caption>
+        <colgroup>
+            <col style="width:50%;" />
+            <col style="width:50%;" />
+        </colgroup>
+        <tbody>
+            <tr>
+                <th scope="row">타이틀</th>
+                <td>내용</td>
+            </tr>
+            <tr>
+                <th scope="row">타이틀</th>
+                <td>내용</td>
+            </tr>
+        </tbody>
+    </table>    <!--//table type2 responsive-->
+</xmp>
+                                    
+                                    <h3>가로 스크롤 테이블(.table_scroll > .table)</h3>
+                                    <div class="table_scroll">
+                                        <table class="table">
+                                            <caption>가로 테이블 - thead의 th 타이틀 내용 넣어주세요.</caption>
+                                            <colgroup>
+                                                <col style="width:20%;" />
+                                                <col style="width:20%;" />
+                                                <col style="width:20%;" />
+                                                <col style="width:20%;" />
+                                                <col style="width:20%;" />
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2">테이블 타이틀</th>
+                                                    <th scope="col" colspan="3">테이블 타이틀</th>
+                                                    <th scope="col" rowspan="2">테이블 타이틀</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">테이블 타이틀</th>
+                                                    <th scope="col">테이블 타이틀</th>
+                                                    <th scope="col">테이블 타이틀</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">테이블 타이틀</th>
+                                                    <td>테이블 내용</td>
+                                                    <td>테이블 내용</td>
+                                                    <td>테이블 내용</td>
+                                                    <td>테이블 내용</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">테이블 타이틀</th>
+                                                    <td>테이블 내용</td>
+                                                    <td>테이블 내용</td>
+                                                    <td>테이블 내용</td>
+                                                    <td>테이블 내용</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">테이블 타이틀</th>
+                                                    <td>테이블 내용</td>
+                                                    <td>영덕은 대게가 대게대게 맛있습니다.</td>
+                                                    <td>테이블 내용</td>
+                                                    <td>테이블 내용</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">테이블 타이틀</th>
+                                                    <td>테이블 내용</td>
+                                                    <td>테이블 내용</td>
+                                                    <td>테이블 내용</td>
+                                                    <td>테이블 내용</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>    <!--//table-->
+                                    </div>    <!--//table_scroll-->
+                                    
+<xmp class="prettyprint linenums xmp">
+    <div class="table_scroll">
+        <table class="table">
+            <caption>가로 테이블 - thead의 th 타이틀</caption>
+            <colgroup>
+                <col style="width:20%;" />
+                <col style="width:20%;" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">타이틀</th>
+                    <th scope="col">타이틀</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">타이틀</th>
+                    <td>내용</td>
+                </tr>
+                <tr>
+                    <th scope="row">타이틀</th>
+                    <td>내용</td>
+                </tr>
+            </tbody>
+        </table>    <!--//table-->
+    </div>    <!--//table_scroll-->
+</xmp>
+                                    
+                                    <h3>tfoot 있는 테이블 예시</h3>
+                                    <table class="table">
+                                        <caption>가로 테이블 - thead의 th 타이틀 내용 넣어주세요.</caption>
+                                        <colgroup>
+                                            <col style="width:25%;" />
+                                            <col style="width:25%;" />
+                                            <col style="width:25%;" />
+                                            <col style="width:25%;" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">테이블 타이틀</th>
+                                                <th scope="col">테이블 타이틀</th>
+                                                <th scope="col">테이블 타이틀</th>
+                                                <th scope="col">테이블 타이틀</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>영덕은 대게가 대게대게 맛있습니다.</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">테이블 타이틀</th>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th scope="row">tfoot 타이틀</th>
+                                                <td>tfoot 내용</td>
+                                                <td>tfoot 내용</td>
+                                                <td>tfoot 내용</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>    <!--//table-->
+                                </div>    <!--//yd_cts_item-->
+                                <div class="yd_cts_item">
+                                    <h3>링크(.yd_link)</h3>
+                                    <a href="" title="바로가기" class="yd_link">본문 내 링크이동</a>    <!--//yd_link-->
+                                    <a href="" target="_blank" title="새창" class="yd_link margin_l_10 margin_r_10">본문 내 링크이동(새창)</a>    <!--//yd_link-->
+                                    <a href="" title="다운로드" class="yd_link down">본문 내 다운로드</a>    <!--//yd_link down-->
+                                    
+<xmp class="prettyprint linenums xmp">
+    <a href="" title="바로가기" class="yd_link">링크이동</a>    <!--//yd_link-->
+    <a href="" target="_blank" title="새창" class="yd_link">링크이동(새창)</a>    <!--//yd_link-->
+    <a href="" title="다운로드" class="yd_link down">다운로드</a>    <!--//yd_link down-->
+    
+    <button type="button" title="바로가기" class="yd_link">링크이동</button>    <!--//yd_link-->
+    <button type="button" title="다운로드" class="yd_link down">다운로드</button>    <!--//yd_link down-->
+</xmp>
+                                    
+                                    <h3>버튼 사이즈 ▷ 기본 50px / 미디움 45px (.medium)/ 스몰 40px (.small)</h3>
+                                    <h4>버튼 컬러 ▷ 하얀색(.white_type) / 파란색(.sky_type) / 남색(.blue_type)</h4>
+                                    <h3>기본 버튼(.yd_btn) - 아이콘X</h3>
+                                    <span class="yd_btn white_type">
+                                        <a href="" class="btn">기본버튼</a>    <!--//btn-->
+                                    </span>    <!--//yd_btn white_type-->
+                                    <span class="yd_btn sky_type">
+                                        <button type="button" class="btn">기본버튼</button>    <!--//btn-->
+                                    </span>    <!--//yd_btn sky_type-->
+                                    <span class="yd_btn blue_type">
+                                        <input type="submit" title="" value="기본버튼" class="btn"/>    <!--//btn-->
+                                    </span>    <!--//yd_btn blue_type-->
+                                    <br /><br />
+                                    <span class="yd_btn white_type medium">
+                                        <a href="" class="btn">기본버튼</a>    <!--//btn-->
+                                    </span>    <!--//yd_btn white_type medium-->
+                                    <span class="yd_btn sky_type medium">
+                                        <button type="button" class="btn">기본버튼</button>    <!--//btn-->
+                                    </span>    <!--//yd_btn sky_type medium-->
+                                    <span class="yd_btn blue_type medium">
+                                        <input type="submit" title="" value="기본버튼" class="btn"/>    <!--//btn-->
+                                    </span>    <!--//yd_btn blue_type  medium-->
+                                    <br /><br />
+                                    <span class="yd_btn white_type small">
+                                        <a href="" class="btn">기본버튼</a>    <!--//btn-->
+                                    </span>    <!--//yd_btn white_type small-->
+                                    <span class="yd_btn sky_type small">
+                                        <button type="button" class="btn">기본버튼</button>    <!--//btn-->
+                                    </span>    <!--//yd_btn sky_type small-->
+                                    <span class="yd_btn blue_type small">
+                                        <input type="submit" title="" value="기본버튼" class="btn"/>    <!--//btn-->
+                                    </span>    <!--//yd_btn blue_type small-->
+                                    
+<xmp class="prettyprint linenums xmp">
+    <span class="yd_btn white_type">
+        <a href="" class="btn">기본버튼</a>    <!--//btn-->
+    </span>    <!--//yd_btn white_type-->
+    
+    <span class="yd_btn sky_type medium">
+        <button type="button" class="btn">미들 기본버튼</button>    <!--//btn-->
+    </span>    <!--//yd_btn sky_type medium-->
+    
+    <span class="yd_btn blue_type small">
+        <input type="submit" title="" value="스몰 기본버튼" class="btn"/>    <!--//btn-->
+    </span>    <!--//yd_btn blue_type small-->
+</xmp>
+                                    <h3>기본 버튼(.yd_btn.change) - 호버 컬러로 변환</h3>
+                                    <span class="yd_btn white_type change">
+                                        <a href="" class="btn">기본버튼</a>    <!--//btn-->
+                                    </span>    <!--//yd_btn white_type change-->
+                                    <span class="yd_btn sky_type change">
+                                        <button type="button" class="btn">기본버튼</button>    <!--//btn-->
+                                    </span>    <!--//yd_btn sky_type change-->
+                                    <span class="yd_btn blue_type change">
+                                        <input type="submit" title="" value="기본버튼" class="btn"/>    <!--//btn-->
+                                    </span>    <!--//yd_btn blue_type change-->
+                                    <br /><br />
+                                    <span class="yd_btn white_type medium change">
+                                        <a href="" class="btn">기본버튼</a>    <!--//btn-->
+                                    </span>    <!--//yd_btn white_type medium change-->
+                                    <span class="yd_btn sky_type medium change">
+                                        <button type="button" class="btn">기본버튼</button>    <!--//btn-->
+                                    </span>    <!--//yd_btn sky_type medium change-->
+                                    <span class="yd_btn blue_type medium change">
+                                        <input type="submit" title="" value="기본버튼" class="btn"/>    <!--//btn-->
+                                    </span>    <!--//yd_btn blue_type medium change-->
+                                    <br /><br />
+                                    <span class="yd_btn white_type small change">
+                                        <a href="" class="btn">기본버튼</a>    <!--//btn-->
+                                    </span>    <!--//yd_btn white_type small change-->
+                                    <span class="yd_btn sky_type small change">
+                                        <button type="button" class="btn">기본버튼</button>    <!--//btn-->
+                                    </span>    <!--//yd_btn sky_type small change-->
+                                    <span class="yd_btn blue_type small change">
+                                        <input type="submit" title="" value="기본버튼" class="btn"/>    <!--//btn-->
+                                    </span>    <!--//yd_btn blue_type small change-->
+                                    
+<xmp class="prettyprint linenums xmp">
+    <span class="yd_btn white_type change">
+        <a href="" class="btn">기본버튼</a>    <!--//btn-->
+    </span>    <!--//yd_btn white_type change-->
+    
+    <span class="yd_btn sky_type medium change">
+        <button type="button" class="btn">미들 기본버튼</button>    <!--//btn-->
+    </span>    <!--//yd_btn sky_type medium change-->
+    
+    <span class="yd_btn blue_type small change">
+        <input type="submit" title="" value="스몰 기본버튼" class="btn"/>    <!--//btn-->
+    </span>    <!--//yd_btn blue_type small change-->
+</xmp>
+                                    
+                                    <h3>아이콘 버튼 (.yd_btn.icon_type) - 바로가기 link / 새창이동 blank / 다운로드 down / 검색 search</h3>
+                                    <h4>기본 사이즈</h4>
+                                    <span class="yd_btn icon_type white_type">
+                                        <a href="" class="btn">바로가기</a>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type-->
+                                    <span class="yd_btn icon_type white_type">
+                                        <a href="" class="btn">새창이동</a>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type-->
+                                    <span class="yd_btn icon_type white_type">
+                                        <a href="" class="btn">다운로드</a>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type-->
+                                    <span class="yd_btn icon_type white_type">
+                                        <a href="" class="btn">검색</a>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type-->
+                                    <br /><br />
+                                    <span class="yd_btn icon_type sky_type" >
+                                        <a href="" class="btn">바로가기</a>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type-->
+                                    <span class="yd_btn icon_type sky_type">
+                                        <a href="" class="btn">새창이동</a>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type-->
+                                    <span class="yd_btn icon_type sky_type">
+                                        <a href="" class="btn">다운로드</a>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type-->
+                                    <span class="yd_btn icon_type sky_type">
+                                        <a href="" class="btn">검색</a>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type-->
+                                    <br /><br />
+                                    <span class="yd_btn icon_type blue_type">
+                                        <a href="" class="btn">바로가기</a>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type-->
+                                    <span class="yd_btn icon_type blue_type">
+                                        <a href="" class="btn">새창이동</a>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type-->
+                                    <span class="yd_btn icon_type blue_type">
+                                        <a href="" class="btn">다운로드</a>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type-->
+                                    <span class="yd_btn icon_type blue_type">
+                                        <a href="" class="btn">검색</a>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type-->
+                                    
+                                    <h4>중간 사이즈(.medium)</h4>
+                                    <span class="yd_btn icon_type white_type medium">
+                                        <button type="button" class="btn">바로가기</button>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type medium-->
+                                    <span class="yd_btn icon_type white_type medium">
+                                        <button type="button" class="btn">새창이동</button>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type medium-->
+                                    <span class="yd_btn icon_type white_type medium">
+                                        <button type="button" class="btn">다운로드</button>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type medium-->
+                                    <span class="yd_btn icon_type white_type medium">
+                                        <button type="button" class="btn">검색</button>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type medium-->
+                                    <br /><br />
+                                    <span class="yd_btn icon_type sky_type medium">
+                                        <button type="button" class="btn">바로가기</button>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type medium-->
+                                    <span class="yd_btn icon_type sky_type medium">
+                                        <button type="button" class="btn">새창이동</button>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type medium-->
+                                    <span class="yd_btn icon_type sky_type medium">
+                                        <button type="button" class="btn">다운로드</button>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type medium-->
+                                    <span class="yd_btn icon_type sky_type medium">
+                                        <button type="button" class="btn">검색</button>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type medium-->
+                                    <br /><br />
+                                    <span class="yd_btn icon_type blue_type medium">
+                                        <button type="button" class="btn">바로가기</button>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type medium-->
+                                    <span class="yd_btn icon_type blue_type medium">
+                                        <button type="button" class="btn">새창이동</button>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type medium-->
+                                    <span class="yd_btn icon_type blue_type medium">
+                                        <button type="button" class="btn">다운로드</button>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type medium-->
+                                    <span class="yd_btn icon_type blue_type medium">
+                                        <button type="button" class="btn">검색</button>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type medium-->
+                                    
+                                    <h4>스몰 사이즈(.small)</h4>
+                                    <span class="yd_btn icon_type white_type small">
+                                        <input type="submit" title="" value="바로가기" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type small-->
+                                    <span class="yd_btn icon_type white_type small">
+                                        <input type="submit" title="" value="새창이동" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type small-->
+                                    <span class="yd_btn icon_type white_type small">
+                                        <input type="submit" title="" value="다운로드" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type small-->
+                                    <span class="yd_btn icon_type white_type small">
+                                        <input type="submit" title="" value="검색" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type small-->
+                                    <br /><br />
+                                    <span class="yd_btn icon_type sky_type small">
+                                        <input type="submit" title="" value="바로가기" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type small-->
+                                    <span class="yd_btn icon_type sky_type small">
+                                        <input type="submit" title="" value="새창이동" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type small-->
+                                    <span class="yd_btn icon_type sky_type small">
+                                        <input type="submit" title="" value="다운로드" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type small-->
+                                    <span class="yd_btn icon_type sky_type small">
+                                        <input type="submit" title="" value="검색" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type small-->
+                                    <br /><br />
+                                    <span class="yd_btn icon_type blue_type small">
+                                        <input type="submit" title="" value="바로가기" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type small-->
+                                    <span class="yd_btn icon_type blue_type small">
+                                        <input type="submit" title="" value="새창이동" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type small-->
+                                    <span class="yd_btn icon_type blue_type small">
+                                        <input type="submit" title="" value="다운로드" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type small-->
+                                    <span class="yd_btn icon_type blue_type small">
+                                        <input type="submit" title="" value="검색" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type small-->
+
+<xmp class="prettyprint linenums xmp">
+    <span class="yd_btn icon_type white_type">
+        <a href="" class="btn">바로가기</a>    <!--//btn-->
+        <i class="b_icon link"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type white_type-->
+    <span class="yd_btn icon_type white_type">
+        <a href="" class="btn">새창이동</a>    <!--//btn-->
+        <i class="b_icon blank"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type white_type-->
+    <span class="yd_btn icon_type white_type">
+        <a href="" class="btn">다운로드</a>    <!--//btn-->
+        <i class="b_icon down"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type white_type-->
+    <span class="yd_btn icon_type white_type">
+        <a href="" class="btn">검색</a>    <!--//btn-->
+        <i class="b_icon search"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type white_type-->
+    
+    <span class="yd_btn icon_type sky_type medium">
+        <button type="button" class="btn">바로가기</button>    <!--//btn-->
+        <i class="b_icon link"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type sky_type medium-->
+    <span class="yd_btn icon_type sky_type medium">
+        <button type="button" class="btn">새창이동</button>    <!--//btn-->
+        <i class="b_icon blank"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type sky_type medium-->
+    <span class="yd_btn icon_type sky_type medium">
+        <button type="button" class="btn">다운로드</button>    <!--//btn-->
+        <i class="b_icon down"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type sky_type medium-->
+    <span class="yd_btn icon_type sky_type medium">
+        <button type="button" class="btn">검색</button>    <!--//btn-->
+        <i class="b_icon search"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type sky_type medium-->
+    
+    <span class="yd_btn icon_type blue_type small">
+        <input type="submit" title="" value="바로가기" class="btn"/>    <!--//btn-->
+        <i class="b_icon link"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type blue_type small-->
+    <span class="yd_btn icon_type blue_type small">
+        <input type="submit" title="" value="새창이동" class="btn"/>    <!--//btn-->
+        <i class="b_icon blank"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type blue_type small-->
+    <span class="yd_btn icon_type blue_type small">
+        <input type="submit" title="" value="다운로드" class="btn"/>    <!--//btn-->
+        <i class="b_icon down"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type blue_type small-->
+    <span class="yd_btn icon_type blue_type small">
+        <input type="submit" title="" value="검색" class="btn"/>    <!--//btn-->
+        <i class="b_icon search"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type blue_type small-->
+</xmp>
+                                    
+                                    <h3>아이콘 버튼(.yd_btn.icon_type.change) - 호버 컬러로 변환</h3>
+                                    <h4>기본 사이즈</h4>
+                                    <span class="yd_btn icon_type white_type change">
+                                        <a href="" class="btn">바로가기</a>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type change-->
+                                    <span class="yd_btn icon_type white_type change">
+                                        <a href="" class="btn">새창이동</a>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type change-->
+                                    <span class="yd_btn icon_type white_type change">
+                                        <a href="" class="btn">다운로드</a>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type change-->
+                                    <span class="yd_btn icon_type white_type change">
+                                        <a href="" class="btn">검색</a>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type change-->
+                                    <br /><br />
+                                    <span class="yd_btn icon_type sky_type change">
+                                        <a href="" class="btn">바로가기</a>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type change-->
+                                    <span class="yd_btn icon_type sky_type change">
+                                        <a href="" class="btn">새창이동</a>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type change-->
+                                    <span class="yd_btn icon_type sky_type change">
+                                        <a href="" class="btn">다운로드</a>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type change-->
+                                    <span class="yd_btn icon_type sky_type change">
+                                        <a href="" class="btn">검색</a>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type change-->
+                                    <br /><br />
+                                    <span class="yd_btn icon_type blue_type change">
+                                        <a href="" class="btn">바로가기</a>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type change-->
+                                    <span class="yd_btn icon_type blue_type change">
+                                        <a href="" class="btn">새창이동</a>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type change-->
+                                    <span class="yd_btn icon_type blue_type change">
+                                        <a href="" class="btn">다운로드</a>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type change-->
+                                    <span class="yd_btn icon_type blue_type change">
+                                        <a href="" class="btn">검색</a>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type change-->
+                                    
+                                    <h4>중간 사이즈(.medium)</h4>
+                                    <span class="yd_btn icon_type white_type medium change">
+                                        <button type="button" class="btn">바로가기</button>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type medium change-->
+                                    <span class="yd_btn icon_type white_type medium change">
+                                        <button type="button" class="btn">새창이동</button>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type medium change-->
+                                    <span class="yd_btn icon_type white_type medium change">
+                                        <button type="button" class="btn">다운로드</button>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type medium change-->
+                                    <span class="yd_btn icon_type white_type medium change">
+                                        <button type="button" class="btn">검색</button>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type medium change-->
+                                    <br /><br />
+                                    <span class="yd_btn icon_type sky_type medium change">
+                                        <button type="button" class="btn">바로가기</button>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type medium change-->
+                                    <span class="yd_btn icon_type sky_type medium change">
+                                        <button type="button" class="btn">새창이동</button>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type medium change-->
+                                    <span class="yd_btn icon_type sky_type medium change">
+                                        <button type="button" class="btn">다운로드</button>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type medium change-->
+                                    <span class="yd_btn icon_type sky_type medium change">
+                                        <button type="button" class="btn">검색</button>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type medium change-->
+                                    <br /><br />
+                                    <span class="yd_btn icon_type blue_type medium change">
+                                        <button type="button" class="btn">바로가기</button>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type medium change-->
+                                    <span class="yd_btn icon_type blue_type medium change">
+                                        <button type="button" class="btn">새창이동</button>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type medium change-->
+                                    <span class="yd_btn icon_type blue_type medium change">
+                                        <button type="button" class="btn">다운로드</button>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type medium change-->
+                                    <span class="yd_btn icon_type blue_type medium change">
+                                        <button type="button" class="btn">검색</button>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type medium change-->
+                                    
+                                    <h4>스몰 사이즈(.small)</h4>
+                                    <span class="yd_btn icon_type white_type small change">
+                                        <input type="submit" title="" value="바로가기" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type small change-->
+                                    <span class="yd_btn icon_type white_type small change">
+                                        <input type="submit" title="" value="새창이동" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type small change-->
+                                    <span class="yd_btn icon_type white_type small change">
+                                        <input type="submit" title="" value="다운로드" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type small change-->
+                                    <span class="yd_btn icon_type white_type small change">
+                                        <input type="submit" title="" value="검색" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type white_type small change-->
+                                    <br /><br />
+                                    <span class="yd_btn icon_type sky_type small change">
+                                        <input type="submit" title="" value="바로가기" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type small change-->
+                                    <span class="yd_btn icon_type sky_type small change">
+                                        <input type="submit" title="" value="새창이동" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type small change-->
+                                    <span class="yd_btn icon_type sky_type small change">
+                                        <input type="submit" title="" value="다운로드" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type small change-->
+                                    <span class="yd_btn icon_type sky_type small change">
+                                        <input type="submit" title="" value="검색" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type sky_type small change-->
+                                    <br /><br />
+                                    <span class="yd_btn icon_type blue_type small change">
+                                        <input type="submit" title="" value="바로가기" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon link"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type small change-->
+                                    <span class="yd_btn icon_type blue_type small change">
+                                        <input type="submit" title="" value="새창이동" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon blank"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type small change-->
+                                    <span class="yd_btn icon_type blue_type small change">
+                                        <input type="submit" title="" value="다운로드" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon down"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type small change-->
+                                    <span class="yd_btn icon_type blue_type small change">
+                                        <input type="submit" title="" value="검색" class="btn"/>    <!--//btn-->
+                                        <i class="b_icon search"></i>    <!--//b_icon-->
+                                    </span>    <!--//yd_btn icon_type blue_type small change-->
+
+<xmp class="prettyprint linenums xmp">
+    <span class="yd_btn icon_type white_type change">
+        <a href="" class="btn">바로가기</a>    <!--//btn-->
+        <i class="b_icon link"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type change-->
+    <span class="yd_btn icon_type white_type change">
+        <a href="" class="btn">새창이동</a>    <!--//btn-->
+        <i class="b_icon blank"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type change-->
+    <span class="yd_btn icon_type white_type change">
+        <a href="" class="btn">다운로드</a>    <!--//btn-->
+        <i class="b_icon down"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type change-->
+    <span class="yd_btn icon_type white_type change">
+        <a href="" class="btn">검색</a>    <!--//btn-->
+        <i class="b_icon search"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type change-->
+    
+    <span class="yd_btn icon_type sky_type medium change">
+        <button type="button" class="btn">바로가기</button>    <!--//btn-->
+        <i class="b_icon link"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type sky_type medium change-->
+    <span class="yd_btn icon_type sky_type medium change">
+        <button type="button" class="btn">새창이동</button>    <!--//btn-->
+        <i class="b_icon blank"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type sky_type medium change-->
+    <span class="yd_btn icon_type sky_type medium change">
+        <button type="button" class="btn">다운로드</button>    <!--//btn-->
+        <i class="b_icon down"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type sky_type medium change-->
+    <span class="yd_btn icon_type sky_type medium change">
+        <button type="button" class="btn">검색</button>    <!--//btn-->
+        <i class="b_icon search"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type sky_type medium change-->
+    
+    <span class="yd_btn icon_type blue_type small change">
+        <input type="submit" title="" value="바로가기" class="btn"/>    <!--//btn-->
+        <i class="b_icon link"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type blue_type small change-->
+    <span class="yd_btn icon_type blue_type small change">
+        <input type="submit" title="" value="새창이동" class="btn"/>    <!--//btn-->
+        <i class="b_icon blank"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type blue_type small change-->
+    <span class="yd_btn icon_type blue_type small change">
+        <input type="submit" title="" value="다운로드" class="btn"/>    <!--//btn-->
+        <i class="b_icon down"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type blue_type small change-->
+    <span class="yd_btn icon_type blue_type small change">
+        <input type="submit" title="" value="검색" class="btn"/>    <!--//btn-->
+        <i class="b_icon search"></i>    <!--//b_icon-->
+    </span>    <!--//yd_btn icon_type blue_type small change-->
+</xmp>
+                                
+                                </div>    <!--//yd_cts_item-->
+                                <div class="yd_cts_item">
+                                    <h3>폼요소 높이 ▶ 기본 45px / 스몰(.small) 40px </h3>
+                                    <h3>인풋박스(.yd_form > .yd_input)</h3>
+                                    <h4>기본 ▶ 높이 45px</h4>
+                                    <span class="yd_form">
+                                        <input type="text" placeholder="입력하세요" title="" class="yd_input" />    <!--//yd_input-->
+                                    </span>    <!--//yd_form-->
+                                    <span class="yd_form">
+                                        <input type="email" placeholder="잘못입력" title="" class="yd_input" />    <!--//yd_input-->
+                                    </span>    <!--//yd_form-->
+                                    <span class="yd_form">
+                                        <input type="text" placeholder="비활성" title="" disabled class="yd_input" />    <!--//yd_input-->
+                                    </span>    <!--//yd_form-->
+                                    <h4>스몰(.small) ▶ 높이 40px</h4>
+                                    <span class="yd_form small">
+                                        <input type="text" placeholder="입력하세요" title="" class="yd_input" />    <!--//yd_input-->
+                                    </span>    <!--//yd_form small-->
+                                    <span class="yd_form small">
+                                        <input type="email" placeholder="잘못입력" title="" class="yd_input" />    <!--//yd_input-->
+                                    </span>    <!--//yd_form small-->
+                                    <span class="yd_form small">
+                                        <input type="text" placeholder="비활성" title="" disabled class="yd_input" />    <!--//yd_input-->
+                                    </span>    <!--//yd_form small-->
+                                    
+<xmp class="prettyprint linenums xmp">
+    <span class="yd_form">
+        <input type="text" value="" title="사용시 작성" class="yd_input" />    <!--//yd_input-->
+    </span>    <!--//yd_form-->
+    
+    <span class="yd_form small">
+        <input type="text" value="" title="사용시 작성" class="yd_input" />    <!--//yd_input-->
+    </span>    <!--//yd_form small-->
+</xmp>
+                                    
+                                    <h3>기본 셀렉트박스(.yd_select_box > .yd_select)</h3>
+                                    <div class="yd_select_box">
+                                        <select name="" id="" title="작성시 입력" class="yd_select">
+                                            <option value="">셀렉트1</option>
+                                            <option value="">셀렉트2</option>
+                                            <option value="">셀렉트3</option>
+                                            <option value="">셀렉트4</option>
+                                        </select>    <!--//yd_select-->
+                                    </div>    <!--//yd_select_box-->
+                                    
+                                    <div class="yd_select_box small">
+                                        <select name="" id="" title="작성시 입력" class="yd_select">
+                                            <option value="">셀렉트1</option>
+                                            <option value="">셀렉트2</option>
+                                            <option value="">셀렉트3</option>
+                                            <option value="">셀렉트4</option>
+                                        </select>    <!--//yd_select-->
+                                    </div>    <!--//yd_select_box small-->
+                                    
+<xmp class="prettyprint linenums xmp">
+    <div class="yd_select_box">
+        <select name="" id="" title="사용시 작성" class="yd_select">
+            <option value=""></option>
+            <option value=""></option>
+        </select>    <!--//yd_select-->
+    </div>    <!--//yd_select_box-->
+    
+    <div class="yd_select_box small">
+        <select name="" id="" title="사용시 작성" class="yd_select">
+            <option value=""></option>
+            <option value=""></option>
+        </select>    <!--//yd_select-->
+    </div>    <!--//yd_select_box small-->
+</xmp>
+                                    <h3>디자인 셀렉트박스(.yd_fake_select_box > .real_select + .fake_select)</h3>
+                                    <div class="yd_fake_select_box">
+                                        <select name="" id="" title="작성시 입력" class="real_select">
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>    <!--//real_select-->
+                                        <div class="fake_select">
+                                            <button type="button" title="셀렉트박스 열기" class="fake_select_open_btn">
+                                                <span class="text"></span>
+                                            </button>    <!--//fake_select_open_btn-->
+                                            <ul class="fake_select_list">
+                                                <li class="fake_select_item active">
+                                                    <button type="button" title="선택됨" class="fake_select_btn">가짜 셀렉트1</button>    <!--//-fake_select_btn-->
+                                                </li>    <!--//fake_select_item-->
+                                                <li class="fake_select_item">
+                                                    <button type="button" class="fake_select_btn">가짜 셀렉트2</button>    <!--//-fake_select_btn-->
+                                                </li>    <!--//fake_select_item-->
+                                                <li class="fake_select_item">
+                                                    <button type="button" class="fake_select_btn">가짜 셀렉트3</button>    <!--//-fake_select_btn-->
+                                                </li>    <!--//fake_select_item-->
+                                                <li class="fake_select_item">
+                                                    <button type="button" class="fake_select_btn">가짜 셀렉트4</button>    <!--//-fake_select_btn-->
+                                                </li>    <!--//fake_select_item-->
+                                            </ul>    <!--//fake_select_list-->
+                                        </div>    <!--//fake_select-->
+                                    </div>    <!--//yd_fake_select_box-->
+                                    
+                                    <div class="yd_fake_select_box small">
+                                        <select name="" id="" title="작성시 입력" class="real_select">
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>    <!--//real_select-->
+                                        <div class="fake_select">
+                                            <button type="button" title="셀렉트박스 열기" class="fake_select_open_btn">
+                                                <span class="text"></span>
+                                            </button>    <!--//fake_select_open_btn-->
+                                            <ul class="fake_select_list">
+                                                <li class="fake_select_item active">
+                                                    <button type="button" title="선택됨" class="fake_select_btn">가짜 셀렉트1</button>    <!--//-fake_select_btn-->
+                                                </li>    <!--//fake_select_item-->
+                                                <li class="fake_select_item">
+                                                    <button type="button" class="fake_select_btn">가짜 셀렉트2</button>    <!--//-fake_select_btn-->
+                                                </li>    <!--//fake_select_item-->
+                                                <li class="fake_select_item">
+                                                    <button type="button" class="fake_select_btn">가짜 셀렉트3</button>    <!--//-fake_select_btn-->
+                                                </li>    <!--//fake_select_item-->
+                                                <li class="fake_select_item">
+                                                    <button type="button" class="fake_select_btn">가짜 셀렉트4</button>    <!--//-fake_select_btn-->
+                                                </li>    <!--//fake_select_item-->
+                                            </ul>    <!--//fake_select_list-->
+                                        </div>    <!--//fake_select-->
+                                    </div>    <!--//yd_fake_select_box small-->
+                                    
+<xmp class="prettyprint linenums xmp">
+    <div class="yd_fake_select_box">
+        <select name="" id="" title="작성시 입력" class="real_select">
+            <option value=""></option>
+            <option value=""></option>
+        </select>    <!--//real_select-->
+        <div class="fake_select">
+            <button type="button" title="셀렉트박스 열기" class="fake_select_open_btn">
+                <span class="text"></span>
+            </button>    <!--//fake_select_open_btn-->
+            <ul class="fake_select_list">
+                <li class="fake_select_item active">
+                    <button type="button" title="선택됨" class="fake_select_btn">가짜 셀렉트1</button>    <!--//-fake_select_btn-->
+                </li>    <!--//fake_select_item-->
+                <li class="fake_select_item">
+                    <button type="button" class="fake_select_btn">가짜 셀렉트2</button>    <!--//-fake_select_btn-->
+                </li>    <!--//fake_select_item-->
+            </ul>    <!--//fake_select_list-->
+        </div>    <!--//fake_select-->
+    </div>    <!--//yd_fake_select_box-->
+</xmp>
+                                    
+                                    <h3>체크박스(.yd_form > .yd_check) - 다중선택O</h3>
+                                    <h4>기본 ▶ 높이 45px</h4>
+                                    <span class="yd_form">
+                                        <input type="checkbox" id="check1" class="yd_check" />    <!--//yd_check-->
+                                        <label for="check1">체크박스1</label>
+                                    </span>    <!--//yd_form-->
+                                    <span class="yd_form">
+                                        <input type="checkbox" id="check2" class="yd_check" />    <!--//yd_check-->
+                                        <label for="check2">체크박스2</label>
+                                    </span>    <!--//yd_form-->
+                                    <span class="yd_form">
+                                        <input type="checkbox" id="check3" class="yd_check" />    <!--//yd_check-->
+                                        <label for="check3">체크박스3</label>
+                                    </span>    <!--//yd_form-->
+                                    <span class="yd_form">
+                                        <input type="checkbox" id="check4" disabled class="yd_check" />    <!--//yd_check-->
+                                        <label for="check4">비활성</label>
+                                    </span>    <!--//yd_form-->
+                                    <h4>스몰(.small) ▶ 높이 40px</h4>
+                                    <span class="yd_form small">
+                                        <input type="checkbox" id="check11" class="yd_check" />    <!--//yd_check-->
+                                        <label for="check11">스몰 체크박스1</label>
+                                    </span>    <!--//yd_form small-->
+                                    <span class="yd_form small">
+                                        <input type="checkbox" id="check12" class="yd_check" />    <!--//yd_check-->
+                                        <label for="check12">스몰 체크박스2</label>
+                                    </span>    <!--//yd_form small-->
+                                    <span class="yd_form small">
+                                        <input type="checkbox" id="check13" class="yd_check" />    <!--//yd_check-->
+                                        <label for="check13">스몰 체크박스3</label>
+                                    </span>    <!--//yd_form small-->
+                                    <span class="yd_form small">
+                                        <input type="checkbox" id="check14" disabled class="yd_check" />    <!--//yd_check-->
+                                        <label for="check14">비활성</label>
+                                    </span>    <!--//yd_form small-->
+                                    
+<xmp class="prettyprint linenums xmp">
+    <span class="yd_form">
+        <input type="checkbox" id="" class="yd_check" />    <!--//yd_check-->
+        <label for="">체크박스</label>
+    </span>    <!--//yd_form-->
+    
+    <span class="yd_form small">
+        <input type="checkbox" id="" class="yd_check" />    <!--//yd_check-->
+        <label for="">스몰 체크박스</label>
+    </span>    <!--//yd_form small-->
+</xmp>
+                                    
+                                    <h3>라디오버튼(.yd_form > .yd_radio) - 다중선택X, 라디오 name값 동일하게</h3>
+                                    <h4>기본 ▶ 높이 45px</h4>
+                                    <span class="yd_form">
+                                        <input type="radio" id="radio1" name="radio" class="yd_radio" />    <!--//yd_radio-->
+                                        <label for="radio1">라디오1</label>
+                                    </span>    <!--//yd_form-->
+                                    <span class="yd_form">
+                                        <input type="radio" id="radio2" name="radio" class="yd_radio" />    <!--//yd_radio-->
+                                        <label for="radio2">라디오2</label>
+                                    </span>    <!--//yd_form-->
+                                    <span class="yd_form">
+                                        <input type="radio" id="radio3" name="radio" class="yd_radio" />    <!--//yd_radio-->
+                                        <label for="radio3">라디오3</label>
+                                    </span>    <!--//yd_form-->
+                                    <span class="yd_form">
+                                        <input type="radio" id="radio4" name="radio" disabled class="yd_radio" />    <!--//yd_radio-->
+                                        <label for="radio4">라디오4</label>
+                                    </span>    <!--//yd_form-->
+                                    <h4>스몰(.small) ▶ 높이 40px</h4>
+                                    <span class="yd_form small">
+                                        <input type="radio" id="radio11" name="radioS" class="yd_radio" />    <!--//yd_radio-->
+                                        <label for="radio11">스몰 라디오1</label>
+                                    </span>    <!--//yd_form small-->
+                                    <span class="yd_form small">
+                                        <input type="radio" id="radio12" name="radioS" class="yd_radio" />    <!--//yd_radio-->
+                                        <label for="radio12">스몰 라디오2</label>
+                                    </span>    <!--//yd_form small-->
+                                    <span class="yd_form small">
+                                        <input type="radio" id="radio13" name="radioS" class="yd_radio" />    <!--//yd_radio-->
+                                        <label for="radio13">스몰 라디오3</label>
+                                    </span>    <!--//yd_form small-->
+                                    <span class="yd_form small">
+                                        <input type="radio" id="radio14" name="radioS" disabled class="yd_radio" />    <!--//yd_radio-->
+                                        <label for="radio14">스몰 라디오4</label>
+                                    </span>    <!--//yd_form small-->
+                                    
+<xmp class="prettyprint linenums xmp">
+    <span class="yd_form">
+        <input type="radio" id="" name="" class="yd_radio" />    <!--//yd_radio-->
+        <label for="">라디오</label>
+    </span>    <!--//yd_form-->
+    <span class="yd_form">
+        <input type="radio" id="" name="" class="yd_radio" />    <!--//yd_radio-->
+        <label for="">라디오</label>
+    </span>    <!--//yd_form-->
+    
+    <span class="yd_form small">
+        <input type="radio" id="" name="" class="yd_radio" />    <!--//yd_radio-->
+        <label for="">스몰 라디오</label>
+    </span>    <!--//yd_form small-->
+    <span class="yd_form small">
+        <input type="radio" id="" name="" class="yd_radio" />    <!--//yd_radio-->
+        <label for="">스몰 라디오</label>
+    </span>    <!--//yd_form small-->
+</xmp>
+                                
+                                </div>    <!--//yd_cts_item-->
+                                <div class="yd_cts_item">
+                                    <h3>기본 텍스트 박스 (.yd_box.text_type)</h3>
+                                    <div class="yd_box text_type">
+                                        <div class="yd_box_inner">
+                                            <div class="desc_box">영덕군은 741.20㎢의 면적으로 경상북도 동북부에 위치하여 영남지방에 속하고 포항시와 울진군, 영양군, 청송군과 경계를 이루고 있습니다. 영덕군은 1읍(영덕읍) 8면(창수면,병곡면,영해면,축산면,지품면,달산면,강구면,
+남정면) 204개 행정리가 있습니다. 폰트명 본문 ONE Mobile Regular체 폰트컬러 #3b3c44</div>    <!--//desc_box-->
+                                        </div>    <!--//yd_box_inner-->
+                                    </div>    <!--//yd_box text_type-->
+                                    
+<xmp class="prettyprint linenums xmp">
+    <div class="yd_box text_type">
+        <div class="yd_box_inner">
+            <div class="desc_box">내용입력</div>    <!--//desc_box-->
+        </div>    <!--//yd_box_inner-->
+    </div>    <!--//yd_box text_type-->
+</xmp>
+                                
+                                </div>    <!--//yd_cts_item-->
+                            </div>    <!--//yd_cts_list-->
+                        </div>    <!--//yd_tab_box-->
+                    </div><!-- //#contents -->
+                </article>
+            </main>
+        </div>
+    </div>    <!-- //#container -->
+    <footer id="footer">
+		<div class="footer_wrap">
+			<div class="footer_inner">
+				<div class="footer_quick">
+					<ul class="quick_list">
+						<li class="quick_item"><a href="" class="link">개인정보처리방침</a></li>
+						<li class="quick_item"><a href="" class="link">영상정보처리기기운영·관리방침</a></li>
+						<li class="quick_item"><a href="" class="link">행정전화번호안내</a></li>
+						<li class="quick_item"><a href="" class="link">이메일무단수집거부</a></li>
+						<li class="quick_item"><a href="" class="link">저작권정책</a></li>
+					</ul>    <!--//quick_list-->
+				</div>    <!--//footer_quick-->
+				<div class="footer_link">
+					<div class="f_link_button"><button type="button" title="바로가기 메뉴 열기" class="btn"><span>홈페이지 바로가기</span></button></div>
+					<ul class="f_link_list">
+						<li class="f_link_item"><a href="" target="_blank" title="새창" rel="noopener noreferrer" class="link"><span>영덕군청</span></a></li>
+						<li class="f_link_item"><a href="" target="_blank" title="새창" rel="noopener noreferrer" class="link"><span>영덕군의회</span></a></li>
+						<li class="f_link_item"><a href="" target="_blank" title="새창" rel="noopener noreferrer" class="link"><span>영덕관광포털</span></a></li>
+					</ul>    <!--//f_link_list-->
+				</div>
+				<div class="footer_info">
+					<address class="address">[36429] 경상북도 영덕군 영덕읍 군청길 116<br />(남석리 310-3)</address>
+					<span class="tel_number">TEL. <a href="tel:054-730-6061">054-730-6061~5</a></span>
+					<p class="copyright">Copyright © YOUNG DUK COUNTY.<br /> All Rights Reserved.</p>
+				</div>    <!--//footer_info-->
+			</div>    <!--//footer_inner-->
+		</div>    <!--//footer_wrap-->
+	</footer>    <!--//#footer-->
+</div>
+<!-- //#wrapper -->
+</body>
+</html>

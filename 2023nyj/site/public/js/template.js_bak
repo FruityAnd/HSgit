@@ -1,0 +1,209 @@
+
+(function($) {
+    'use strict';
+
+    var $window = $(window),
+        $document = $(document),
+        $html = $('html'),
+        $head = $('head'),
+		$screen = $.screen,
+        $inArray = $.inArray;
+
+    $(function() {
+
+        /* 탭메뉴 */
+        var $tabWrap = $('.tab_wrap');
+        $tabWrap.each(function () {
+            var $this = $(this),
+                $tabList = $this.find('.tab_list'),
+                $tabItem = $tabList.find('.tab_item'),
+                tabIndex = $tabItem.length;
+
+            if(tabIndex >= 5){
+                $tabList.addClass('col5');
+            }else if(tabIndex < 5){
+                $tabList.addClass('col' + tabIndex);
+            }
+            console.log(tabIndex);
+        });
+
+        $('.tab_wrap.temp_tab .tab_link').on('click', function () {
+            var $this = $(this),
+                $parent = $this.parent('.tab_item'),
+                $content = $this.closest('.tab_wrap').find('.tab_content'),
+                index = $parent.index();
+
+            $parent.addClass('on').attr('title', '선택됨').siblings('.tab_item').removeClass('on').attr('title', '');
+            $content.eq(index).addClass('active').siblings('.tab_content').removeClass('active');
+            console.log(index);
+        });
+
+        // 반응형 테이블 시작
+        $('table.table.responsive').not($('.prettyprint').children()).each(function () {
+            var RowSpanExist = $(this).find('td, th').is('[rowspan]'),
+                TheadExist = $(this).find('thead').length;
+            if ((RowSpanExist == false) && (TheadExist != 0)) {//rowspan이 없을 경우만 실행 (rowspan이 있으면 지원불가)
+                $(this).children('tbody').children('tr').find('th, td').each(function () {
+                    var ThisIndex = $(this).index(),
+                        TheadText = $(this).parents('tbody').siblings('thead').find('th').eq(ThisIndex).text();
+                    $(this).attr('data-content', TheadText);
+                });
+                $(this).children('tfoot').children('tr').find('th, td').each(function () {
+                    var ThisIndex = $(this).index(),
+                        TheadText = $(this).parents('tfoot').siblings('thead').find('th').eq(ThisIndex).text();
+                    $(this).attr('data-content', TheadText);
+                });
+            };
+        });
+        // 반응형 테이블 끝
+
+        // 스타일 있는 셀렉트박스 시작
+            var $container = $('#container');
+            var $nyjSelBox = $container.find('.nyj_fake_select_box');
+
+            $nyjSelBox.each(function () {
+                var $nyjSelBox = $(this),
+                    $realSelc = $(this).find('select.real_select'),
+                    $realSelcOpt = $realSelc.find('option'),
+                    $fakeSelcOpenBtn = $(this).find('button.fake_select_btn_open'),
+                    $fakeSelcOpenText =  $fakeSelcOpenBtn.find('.text'),
+                    $fakeSelcList = $(this).find('.fake_select_list'),
+                    $fakeSelcItem = $fakeSelcList.find('.fake_select_item'),
+                    $fakeSelcItemActive = $fakeSelcItem.siblings('.fake_select_item.active'),
+                    $fakeSelcItemActiveText = $fakeSelcItemActive.find('button.fake_select_btn'),
+                    $fakeSelcItemActiveIndex = $fakeSelcItemActive.index(),
+                    $StartSelcOpt = $realSelc.find('option').eq($fakeSelcItemActiveIndex),
+                    $fakeSelcBtn = $fakeSelcItem.find('button.fake_select_btn');
+
+                $StartSelcOpt.attr('selected', true);
+                $fakeSelcOpenText.text($fakeSelcItemActiveText.text());
+
+                // option text 매칭
+                $fakeSelcItem.each(function() {
+                    var fakeItemIndex = $(this).index(),
+                        $fakeSelcBtnText = $(this).find('button.fake_select_btn').text(),
+                        $fakeSelcOptionText = $realSelcOpt.eq(fakeItemIndex).text($fakeSelcBtnText);
+                });
+
+                // nyjSelBox on off
+                $fakeSelcOpenBtn.on('click', function () {
+                    if ($nyjSelBox.hasClass('active')) {
+                        $nyjSelBox.removeClass('active');
+                        $(this).attr('title', '셀렉트박스 열기');
+                    } else {
+                        $nyjSelBox.addClass('active');
+                        $(this).attr('title', '셀렉트박스 닫기');
+                    };
+                });
+
+                // btn select
+                $fakeSelcBtn.on('click', function () {
+                    var fakeSelcItemIndex = $(this).closest('.fake_select_item').index();
+
+                    $(this).attr('title', '선택됨').closest('.fake_select_item').addClass('active').siblings().removeClass('active').children().removeAttr('title');
+                    $realSelcOpt.eq(fakeSelcItemIndex).attr('selected', true).siblings().attr('selected', false);
+                    $fakeSelcOpenText.text($(this).text()).closest('.fake_select_btn_open').attr('title', '셀렉트박스 열기');
+                    $nyjSelBox.removeClass('active');
+                    $fakeSelcOpenBtn.focus();
+                });
+            });
+
+        // 스타일 있는 셀렉트박스 끝
+
+        // 내용있는 스텝박스 자동 높이조절 시작
+        function threeStepAutoHeight(){
+            var $threeStepBox = $container.find('.step_box.desc_type[data-row="3"]');
+            
+            $threeStepBox.each(function(){
+                if($window.width() > 640) {
+                    var $threeStepInner = $(this).find('.step_item_inner'),
+                        $onlyThreeStepTitle = $threeStepInner.find('.step_title:only-child'),
+                        $threeStepDesc = $threeStepInner.find('.step_desc'),
+                        $hasThreeStepInner = $threeStepDesc.closest('.step_item_inner');
+
+                    var tabs = $(this).closest('.tab_obj, .tab_content');
+
+                    //console.log(tabs, tabs && tabs.css('display') == 'none')
+
+                    if(tabs && tabs.css('display') == 'none') {
+                        $(this).closest('.tab_obj').css('display', 'block');
+                        threeStepAutoHeight();
+                        $(this).closest('.tab_obj').css('display', 'none');
+                        return false;
+                    }
+
+                    $threeStepDesc.removeAttr('style');
+                    $onlyThreeStepTitle.removeAttr('style');
+
+                    var $threeDescHeightArray = $threeStepDesc.map(function (){
+                        return $(this).height();
+                    }).get();
+
+                    var $threeDescMaxHeight = Math.max(...$threeDescHeightArray);
+                    $threeStepDesc.height($threeDescMaxHeight);
+
+                    var $threeInnerHeightArray = $hasThreeStepInner.map(function (){
+                        return $(this).height();
+                    }).get();
+
+                    var $threeInnerMaxHeight = Math.max(...$threeInnerHeightArray),
+                        $threeResultMaxHeight = $threeInnerMaxHeight.valueOf() - 2; //step_title border값 2px
+                    $onlyThreeStepTitle.height($threeResultMaxHeight);
+                }
+            });
+        }
+        $window.on('load resize', function(){
+            threeStepAutoHeight();
+        });
+
+        function fourStepAutoHeight(){
+            var $fourStepBox = $container.find('.step_box.desc_type[data-row="4"]');
+
+            $fourStepBox.each(function(){
+                if($window.width() > 640) {
+                    var $fourStepInner = $(this).find('.step_item_inner'),
+                        $onlyFourStepTitle = $fourStepInner.find('.step_title:only-child'),
+                        $fourStepDesc = $fourStepInner.find('.step_desc'),
+                        $hasFourStepInner = $fourStepDesc.closest('.step_item_inner');
+
+                    var tabs = $(this).closest('.tab_obj, .tab_content');
+
+                    //console.log(tabs, tabs && tabs.css('display') == 'none')
+
+                    if(tabs && tabs.css('display') == 'none') {
+                        tabs.css('display', 'block');
+                        fourStepAutoHeight();
+                        tabs.css('display', 'none');
+                        return false;
+                    }
+
+                    $fourStepDesc.removeAttr('style');
+                    $onlyFourStepTitle.removeAttr('style');
+
+                    var $fourDescHeightArray = $fourStepDesc.map(function (){
+                        return $(this).height();
+                    }).get();
+
+                    var $fourDescMaxHeight = Math.max(...$fourDescHeightArray);
+                    $fourStepDesc.height($fourDescMaxHeight);
+
+                    var $fourInnerHeightArray = $hasFourStepInner.map(function (){
+                        return $(this).height();
+                    }).get();
+
+                    var $fourInnerMaxHeight = Math.max(...$fourInnerHeightArray),
+                        $fourResultMaxHeight = $fourInnerMaxHeight.valueOf() - 2; //step_title border값 2px
+                    $onlyFourStepTitle.height($fourResultMaxHeight);
+                }
+            });
+        }
+        $window.on('load resize', function(){
+            fourStepAutoHeight();
+        });
+        // 내용있는 스텝박스 자동 높이조절 끝
+
+        $window.on('screen:tablet screen:phone', function(event) {
+            
+        });
+    });
+})(jQuery);

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* (주)한신정보기술 박남규 - 2023.07 */
+
+/* 회원(Members) > 서비스이용약관 */
+.cts89_wrap .num li,
+.cts89_wrap p{word-break:keep-all;}
+.cts89_wrap .table_scroll,
+.cts89_wrap .table{margin:0;}
+.cts89_wrap .table thead tr th,
+.cts89_wrap .table thead tr td,
+.cts89_wrap .table tbody tr th,
+.cts89_wrap .table tbody tr td{padding-top:9px;padding-bottom:9px;}
+.cts89_wrap li .table_scroll{margin-top:5px;}
+.cts89_wrap .warning_box{display:block;position:relative;width:100%;padding:15px;border:1px solid #555;border-radius:15px;box-sizing:border-box;text-align:center;}
+@media screen and (min-width:1001px){
+    .cts89_wrap .num + h5,
+    .cts89_wrap p + h5{margin-top:20px;}
+}
